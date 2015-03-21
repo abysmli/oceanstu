@@ -1,0 +1,135 @@
+/*
+Theme Name: iDea - Clean & Powerful Bootstrap Theme
+Author: HtmlCoder
+Author URI: http://www.htmlcoder.me
+Author e-mail: htmlcoder.me@gmail.com
+Version: 1.0.0 
+Created: August 2014
+License URI: http://wrapbootstrap.com
+File Description: Place here your custom CSS styles
+*/
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+.splitpage-container {
+	display: block;
+	height: 700px;
+	width: 100%;
+	overflow: hidden;
+	position: relative;
+}
+
+.splitpage-container div a {
+	display: inline-block;
+	position: absolute;
+	z-index: 500;
+	margin-left: 20px;
+	margin-top: 20px;
+}
+
+.splitpage-1 {
+	border: 2px solid #D8D8D8;
+	overflow: hidden;
+	position: absolute;
+	z-index: 100;
+	left: 0px;
+	height: 700px;
+	width: 1244px;
+}
+
+.splitpage-2 {
+	border: 2px solid #D8D8D8;
+	overflow: hidden;
+	position: absolute;
+	z-index: 200;
+	left: 200px;
+	height: 700px;
+	width: 1120px;
+	-webkit-backface-visibility: hidden;
+	-ms-transform: skew(-10deg,0deg); /* IE 9 */
+    -webkit-transform: skew(-10deg,0deg); /* Chrome, Safari, Opera */
+    transform: skew(-10deg,0deg);
+}
+
+.splitpage-2 img{
+	position: absolute;
+	-webkit-transform: skew(10deg, 0);
+}
+
+.splitpage-3 {
+	border: 2px solid #D8D8D8;
+	overflow: hidden;
+	position: absolute;
+	z-index: 300;
+	left: 400px;
+	height: 700px;
+	width: 1120px;
+	-webkit-backface-visibility: hidden;
+	-ms-transform: skew(-10deg,0deg); /* IE 9 */
+    -webkit-transform: skew(-10deg,0deg); /* Chrome, Safari, Opera */
+    transform: skew(-10deg,0deg);
+}
+
+.splitpage-3 img{
+	position: absolute;
+	-webkit-transform: skew(10deg, 0);
+}
+
+.splitpage-4 {
+	border: 2px solid #D8D8D8;
+	overflow: hidden;
+	position: absolute;
+	z-index: 400;
+	left: 600px;
+	height: 700px;
+	width: 1244px;
+	-webkit-backface-visibility: hidden;
+	-ms-transform: skew(-10deg,0deg); /* IE 9 */
+    -webkit-transform: skew(-10deg,0deg); /* Chrome, Safari, Opera */
+    transform: skew(-10deg,0deg);
+}
+
+.splitpage-4 img{
+	position: absolute;
+	-webkit-transform: skew(10deg, 0);
+}
+
+.second-page-body {
+	background-color: #474747;
+}
+
+.stuttgart {
+	display: inline-block;
+	position: absolute;
+	left: 35%;
+	top: 77%;
+}
+
+.berlin {
+	display: inline-block;
+	position: absolute;
+	left: 73%;
+	top: 32%;
+}
+
+.hamburg {
+	display: inline-block;
+	position: absolute;
+	left: 46%;
+	top: 20%;
+}
+
+.stuttgart img{
+	width:50%;
+}
+
+.berlin img{
+	width:50%;
+}
+
+.hamburg img{
+	width:50%;
+}
+
