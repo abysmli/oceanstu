@@ -15,6 +15,9 @@ var image_ber = tpj(".berlin img");
 var image_ham = tpj(".hamburg img");
 
 tpj(document).ready(function() {
+
+    tpj('[data-toggle="tooltip"]').tooltip();
+
     if (tpj.fn.cssOriginal != undefined) tpj.fn.css = tpj.fn.cssOriginal;
     var api = tpj('.slider-banner').revolution();
 

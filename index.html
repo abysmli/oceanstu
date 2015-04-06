@@ -1,13 +1,14 @@
 <!DOCTYPE html>
 <!--[if IE 9]> <html lang="en" class="ie9"> <![endif]-->
+<!--[if IE 8]> <html lang="en" class="ie8"> <![endif]-->
 <!--[if !IE]><!-->
 <html lang="en">
 <!--<![endif]-->
 	<head>
 		<meta charset="utf-8">
 		<title>欧深思途</title>
-		<meta name="description" content="iDea a Bootstrap-based, Responsive HTML5 Template">
-		<meta name="author" content="htmlcoder.me">
+		<meta name="description" content="欧深思途">
+		<meta name="author" content="Li, Yuan">
 
 		<!-- Mobile Meta -->
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -39,17 +40,23 @@
 		<link href="css/style.css" rel="stylesheet">
 
 		<!-- Color Scheme (In order to change the color scheme, replace the red.css with the color scheme that you prefer)-->
-		<link href="css/skins/dark_cyan.css" rel="stylesheet">
+		<link href="css/skins/red.css" rel="stylesheet">
 
-		<!-- Custom css --> 
+		<!-- Custom css -->
 		<link href="css/custom.css" rel="stylesheet">
+
+		<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+		<!--[if lt IE 9]>
+			<script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+			<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+		<![endif]-->
 	</head>
 
 	<!-- body classes: 
 			"boxed": boxed layout mode e.g. <body class="boxed">
 			"pattern-1 ... pattern-9": background patterns for boxed layout mode e.g. <body class="boxed pattern-1"> 
 	-->
-	<body class="front">
+	<body class="front no-trans" id="header-top">
 		<!-- scrollToTop -->
 		<!-- ================ -->
 		<div class="scrollToTop"><i class="icon-up-open-big"></i></div>
@@ -60,7 +67,7 @@
 
 			<!-- header start (remove fixed class from header in order to disable fixed navigation mode) -->
 			<!-- ================ --> 
-			<header class="header fixed clearfix">
+			<header class="header header-small fixed clearfix">
 				<div class="container">
 					<div class="row">
 						<div class="col-md-3">
@@ -70,8 +77,8 @@
 							<div class="header-left clearfix">
 
 								<!-- logo -->
-								<div class="logo">
-									<a href="secondpage.html"><img id="logo" src="images/logo.png" alt="iDea"></a>
+								<div class="logo smooth-scroll">
+									<a href="#header-top"><img id="logo" src="images/logo.png" alt="iDea"></a>
 								</div>
 
 								<!-- name-and-slogan -->
@@ -109,33 +116,33 @@
 											</div>
 
 											<!-- Collect the nav links, forms, and other content for toggling -->
-											<div class="collapse navbar-collapse" id="navbar-collapse-1">
+											<div class="collapse navbar-collapse scrollspy smooth-scroll" id="navbar-collapse-1">
 												<ul class="nav navbar-nav navbar-right">
 													<!-- mega-menu start -->
 													<li class="dropdown">
-														<a href="#" class="dropdown-toggle" data-toggle="dropdown">经典路线</a>
+														<a href="#classic_path" class="dropdown-toggle" data-toggle="dropdown">经典路线</a>
 														<ul class="dropdown-menu">
-															<li><a href="features-typography.html">德瑞奥</a></li>
-															<li><a href="features-grid.html">荷比卢</a></li>
-															<li><a href="features-grid.html">意，法</a></li>
+															<li><a href="#classic_path">德瑞奥</a></li>
+															<li><a href="#classic_path">荷比卢</a></li>
+															<li><a href="#classic_path">意，法</a></li>
 														</ul>
 													</li>
 													<!-- mega-menu end -->
 													<li class="dropdown">
-														<a href="#" class="dropdown-toggle" data-toggle="dropdown">北极以南</a>
+														<a href="#south_nodepol" class="dropdown-toggle" data-toggle="dropdown">北极以南</a>
 														<ul class="dropdown-menu">
-															<li><a href="features-typography.html">北欧四国</a></li>
-															<li><a href="features-grid.html">冰岛</a></li>
+															<li><a href="#south_nodepol">北欧四国</a></li>
+															<li><a href="#south_nodepol">冰岛</a></li>
 														</ul>
 													</li>
 													<!-- mega-menu start -->
 													<li class="dropdown">
-														<a href="#" class="dropdown-toggle" data-toggle="dropdown">主题旅游</a>
+														<a href="#thema_travel" class="dropdown-toggle" data-toggle="dropdown">主题旅游</a>
 														<ul class="dropdown-menu">
-															<li><a href="features-typography.html">摄影</a></li>
-															<li><a href="features-grid.html">滑雪</a></li>
-															<li><a href="features-grid.html">试驾</a></li>
-															<li><a href="features-grid.html">蜜月</a></li>
+															<li><a href="#thema_travel">摄影</a></li>
+															<li><a href="#thema_travel">滑雪</a></li>
+															<li><a href="#thema_travel">试驾</a></li>
+															<li><a href="#thema_travel">蜜月</a></li>
 														</ul>
 													</li>
 												</ul>
@@ -163,7 +170,7 @@
 
 				<!-- slideshow start -->
 				<!-- ================ -->
-				<div class="slideshow">
+				<div class="slideshow scrollspy smooth-scroll">
 					
 					<!-- slider revolution start -->
 					<!-- ================ -->
@@ -183,7 +190,7 @@
 									data-speed="600"
 									data-start="1200"
 									data-end="9400"
-									data-endspeed="600">经典路线
+									data-endspeed="600"><a href="#classic_path" style="color: white;">经典路线</a>
 								</div>
 
 								<!-- LAYER NR. 2 -->
@@ -203,7 +210,7 @@
 									data-speed="600"
 									data-start="1600"
 									data-end="9400"
-									data-endspeed="600">德瑞奥
+									data-endspeed="600"><a href="#classic_path" style="color: black;">德瑞捷奥</a>
 								</div>
 
 								<!-- LAYER NR. 4 -->
@@ -223,7 +230,7 @@
 									data-speed="600"
 									data-start="1800"
 									data-end="9400"
-									data-endspeed="600">荷比卢
+									data-endspeed="600"><a href="#classic_path" style="color: black;">荷比卢</a>
 								</div>
 
 								<!-- LAYER NR. 6 -->
@@ -243,7 +250,7 @@
 									data-speed="600"
 									data-start="2000"
 									data-end="9400"
-									data-endspeed="600">意，法
+									data-endspeed="600"><a href="#classic_path" style="color: black;">意，法</a>
 								</div>
 
 								<!-- LAYER NR. 11 -->
@@ -272,7 +279,7 @@
 									data-speed="600"
 									data-start="1200"
 									data-end="9400"
-									data-endspeed="600">北极以南
+									data-endspeed="600"><a href="#south_nodepol" style="color: black;">北极以南</a>
 								</div>
 
 								<!-- LAYER NR. 2 -->
@@ -292,7 +299,7 @@
 									data-speed="600"
 									data-start="1600"
 									data-end="9400"
-									data-endspeed="600">北欧四国
+									data-endspeed="600"><a href="#south_nodepol" style="color: black;">北欧四国</a>
 								</div>
 
 								<!-- LAYER NR. 4 -->
@@ -312,7 +319,7 @@
 									data-speed="600"
 									data-start="1800"
 									data-end="9400"
-									data-endspeed="600">冰岛
+									data-endspeed="600"><a href="#south_nodepol" style="color: black;">冰岛</a>
 								</div>
 
 								<!-- LAYER NR. 11 -->
@@ -341,7 +348,7 @@
 									data-speed="600"
 									data-start="1200"
 									data-end="9400"
-									data-endspeed="600">主题旅游
+									data-endspeed="600"><a href="#thema_travel" style="color: black;">主题旅游</a>
 								</div>
 
 								<!-- LAYER NR. 2 -->
@@ -361,7 +368,7 @@
 									data-speed="600"
 									data-start="1600"
 									data-end="9400"
-									data-endspeed="600">摄影
+									data-endspeed="600"><a href="#thema_travel" style="color: black;">摄影</a>
 								</div>
 
 								<!-- LAYER NR. 4 -->
@@ -381,7 +388,7 @@
 									data-speed="600"
 									data-start="1800"
 									data-end="9400"
-									data-endspeed="600">滑雪
+									data-endspeed="600"><a href="#thema_travel" style="color: black;">滑雪</a>
 								</div>
 
 								<!-- LAYER NR. 6 -->
@@ -401,7 +408,7 @@
 									data-speed="600"
 									data-start="2000"
 									data-end="9400"
-									data-endspeed="600">试驾
+									data-endspeed="600"><a href="#thema_travel" style="color: black;">试驾</a>
 								</div>
 
 								<!-- LAYER NR. 8 -->
@@ -421,7 +428,7 @@
 									data-speed="600"
 									data-start="2200"
 									data-end="9400"
-									data-endspeed="600">蜜月
+									data-endspeed="600"><a href="#thema_travel" style="color: black;">蜜月</a>
 								</div>
 
 								<!-- LAYER NR. 11 -->
@@ -452,11 +459,15 @@
 				<!-- slideshow end -->
 
 			</div>
-			<!-- banner end -->
+			<!-- header-top end -->
+
+			
+
+
 
 			<!-- main-container start -->
 			<!-- ================ -->
-			<section class="main-container">
+			<section class="main-container object-non-visible" data-animation-effect="fadeInUpSmall" data-effect-delay="300">
 				<div class="container">
 					<div class="row">
 						<!-- main start -->
@@ -464,16 +475,22 @@
 						<div class="main col-md-12">
 							<!-- Content Sliders start -->
 							<!-- ============================================================================== -->
-							<h2>经典路线</h2>
+							<h1 class="page-title space-top" id="classic_path">经典路线</h1>
 							<div class="separator-2"></div>
 							<div class="owl-carousel content-slider-with-controls-autoplay">
 								<div class="overlay-container">
 									<img src="images/portfolio-item-2.jpg" alt="">
 									<div class="caption">
-										<h3 class="title">经典路线 - 德瑞奥</h3>
+										<h3 class="title">经典路线 - 德瑞捷奥</h3>
 										新天鹅城堡是德国的象征，由于是迪斯尼城堡的原型，也有人叫白雪公主城堡。建于1869年。这座城堡是巴伐利亚国王路德维希二世的行宫之一。
 									</div>
-									<a href="images/portfolio-item-2.jpg" class="popup-img overlay" title="image title"><i class="fa fa-search-plus"></i></a>
+									<div class="overlay">
+										<div class="overlay-links">
+											<a href="secondpage.html"><i class="fa fa-link"></i></a>
+											<a href="images/portfolio-item-2.jpg" class="popup-img" title="新天鹅城堡"><i class="fa fa-search-plus"></i></a>
+										</div>
+										<span style="margin-bottom: 2em;">经典路线 - 德瑞捷奥</span>
+									</div>
 								</div>
 								<div class="overlay-container">
 									<img src="images/portfolio-item-1.jpg" alt="">
@@ -481,7 +498,13 @@
 										<h3 class="title">经典路线 - 荷比卢</h3>
 										布鲁塞尔（法语：Bruxelles；荷兰语：Brussel）是比利时的首都和最大的城市，也是欧洲联盟的主要行政机构所在地，有欧洲的首都之称。
 									</div>
-									<a href="images/portfolio-item-1.jpg" class="popup-img overlay" title="image title"><i class="fa fa-search-plus"></i></a>
+									<div class="overlay">
+										<div class="overlay-links">
+											<a href="secondpage.html"><i class="fa fa-link"></i></a>
+											<a href="images/portfolio-item-1.jpg" class="popup-img" title="布鲁塞尔"><i class="fa fa-search-plus"></i></a>
+										</div>
+										<span style="margin-bottom: 2em;">经典路线 - 荷比卢</span>
+									</div>
 								</div>
 								<div class="overlay-container">
 									<img src="images/portfolio-item-3.jpg" alt="">
@@ -489,19 +512,31 @@
 										<h3 class="title">经典路线 - 意法</h3>
 										威尼斯水上城市是文艺复兴的精华，世界上唯一没有汽车的城市，上帝将眼泪流在了这里，却让它更加晶莹和柔情，就好像一个漂浮在碧波上浪漫的梦。
 									</div>
-									<a href="images/portfolio-item-3.jpg" class="popup-img overlay" title="image title"><i class="fa fa-search-plus"></i></a>
+									<div class="overlay">
+										<div class="overlay-links">
+											<a href="secondpage.html"><i class="fa fa-link"></i></a>
+											<a href="images/portfolio-item-3.jpg" class="popup-img" title="威尼斯"><i class="fa fa-search-plus"></i></a>
+										</div>
+										<span style="margin-bottom: 2em;">经典路线 - 荷比卢</span>
+									</div>
 								</div>
 							</div>
 						</div>
-						<!-- main end -->
+					</div>
+				</div>
+			</section>
+			<!-- main end -->
 
-						<!-- main start -->
+			<!-- main start -->
+			<div class="section gray-bg clearfix object-non-visible" data-animation-effect="fadeInUpSmall" data-effect-delay="300">
+				<div class="container">
+					<div class="row">
 						<!-- ================ -->
 						<div class="main col-md-12">
 
 							<!-- page-title start -->
 							<!-- ================ -->
-							<h1 class="page-title">北极以南</h1>
+							<h1 class="page-title space-top" id="south_nodepol">北极以南</h1>
 							<div class="separator-2"></div>
 							<!-- page-title end -->
 							
@@ -521,103 +556,110 @@
 									<div class="image-box">
 										<div class="overlay-container">
 											<img src="images/reykjavik.jpg" alt="">
-											<a href="portfolio-item.html" class="overlay small">
+											<a class="overlay small">
 												<i class="fa fa-link"></i>
 												<span>雷克雅未克，是冰岛首都和第一大城市。位于冰岛西南端的法克萨湾，离北极圈很近，它是世界最北边的首都。</span>
 											</a>
 										</div>
-										<a href="portfolio-item.html" class="btn btn-light-gray btn-lg btn-block">雷克雅未克</a>
+										<a class="btn btn-light-gray btn-lg btn-block">雷克雅未克</a>
 									</div>
 								</div>
 								<div class="col-sm-6 col-md-4 isotope-item nordeuropa">
 									<div class="image-box">
 										<div class="overlay-container">
 											<img src="images/copenhagen.jpg" alt="">
-											<a href="portfolio-item.html" class="overlay small">
+											<a class="overlay small">
 												<i class="fa fa-link"></i>
 												<span>哥本哈根曾被联合国人居署选为“最适合居住的城市”，并给予“最佳设计城市”的评价。丹麦全国重要的食品、造船、机械、电子等工业大多集中在这里，世界上许多重要的国际会议都在此召开。</span>
 											</a>
 										</div>
-										<a href="portfolio-item.html" class="btn btn-light-gray btn-lg btn-block">哥本哈根</a>
+										<a class="btn btn-light-gray btn-lg btn-block">哥本哈根</a>
 									</div>
 								</div>
 								<div class="col-sm-6 col-md-4 isotope-item island">
 									<div class="image-box">
 										<div class="overlay-container">
 											<img src="images/akureyri.jpg" alt="">
-											<a href="portfolio-item.html" class="overlay small">
+											<a class="overlay small">
 												<i class="fa fa-link"></i>
 												<span>阿库雷里市还是一座有百年历史的港口，该港口于19世纪末期建成。由于海湾伸入内陆，加上两岸陡壁的屏障和得天独厚的优越条件，使这里成为一个风平浪静的天然良港。港口基本上不结冰，方便了水产品的出口，也是冰岛北部的重要贸易中心。</span>
 											</a>
 										</div>
-										<a href="portfolio-item.html" class="btn btn-light-gray btn-lg btn-block">阿库雷里</a>
+										<a class="btn btn-light-gray btn-lg btn-block">阿库雷里</a>
 									</div>
 								</div>
 								<div class="col-sm-6 col-md-4 isotope-item nordeuropa">
 									<div class="image-box">
 										<div class="overlay-container">
 											<img src="images/oslo.jpg" alt="">
-											<a href="portfolio-item.html" class="overlay small">
+											<a class="overlay small">
 												<i class="fa fa-link"></i>
 												<span>奥斯陆，欧洲北部城市，位于挪威东南部，是挪威的首都和最大城市。1952年在奥斯陆曾经举办过冬季奥运会。</span>
 											</a>
 										</div>
-										<a href="portfolio-item.html" class="btn btn-light-gray btn-lg btn-block">奥斯陆</a>
+										<a class="btn btn-light-gray btn-lg btn-block">奥斯陆</a>
 									</div>
 								</div>
 								<div class="col-sm-6 col-md-4 isotope-item nordeuropa">
 									<div class="image-box">
 										<div class="overlay-container">
 											<img src="images/stockholm.jpg" alt="">
-											<a href="portfolio-item.html" class="overlay small">
+											<a class="overlay small">
 												<i class="fa fa-link"></i>
 												<span>斯德哥尔摩由于免受战争的破坏而保存良好，现在共有100多座博物馆和名胜，包括历史、民族、自然、美术等各个方面。斯德哥尔摩也是一个高科技的城市，拥有众多大学，工业发达。斯德哥尔摩也是瑞典的金融中心，瑞典主要的银行的总部都在这里。</span>
 											</a>
 										</div>
-										<a href="portfolio-item.html" class="btn btn-light-gray btn-lg btn-block">斯德哥尔摩</a>
+										<a class="btn btn-light-gray btn-lg btn-block">斯德哥尔摩</a>
 									</div>
 								</div>
 								<div class="col-sm-6 col-md-4 isotope-item nordeuropa">
 									<div class="image-box">
 										<div class="overlay-container">
 											<img src="images/helsinki.jpg" alt="">
-											<a href="portfolio-item.html" class="overlay small">
+											<a class="overlay small">
 												<i class="fa fa-link"></i>
 												<span>在大海的衬托下，无论夏日海碧天蓝，还是冬季流冰遍浮，这座港口城市总是显得美丽洁净，被世人赞美为“波罗的海的女儿”。在赫尔辛基的海港市场上，有一尊名叫“波罗的海的女儿”的铜像，是赫尔辛基的象征。</span>
 											</a>
 										</div>
-										<a href="portfolio-item.html" class="btn btn-light-gray btn-lg btn-block">赫尔辛基</a>
+										<a class="btn btn-light-gray btn-lg btn-block">赫尔辛基</a>
 									</div>
 								</div>
 							</div>
 							<!-- portfolio items end -->
 						</div>
-						<!-- main end -->
+					</div>
+				</div>
+			</div>
+			<!-- main end -->
 
+
+			<section class="main-container object-non-visible" data-animation-effect="fadeInUpSmall" data-effect-delay="300">
+				<div class="container">
+					<div class="row">
 						<!-- main start -->
 						<!-- ================ -->
 						<div class="main col-md-12">
 
 							<!-- page-title start -->
 							<!-- ================ -->
-							<h1 class="page-title">主题旅游</h1>
+							<h1 class="page-title space-top" id="thema_travel">主题旅游</h1>
 							<div class="separator-2"></div>
 							<!-- page-title end -->
 							<div class="splitpage-container">
 								<div class="splitpage-1">
-									<a href="#">摄影</a>
+									<a>摄影</a>
 									<img alt="photography" src="images/photography.jpg">
 								</div>
 								<div class="splitpage-2">
-									<a href="#">滑雪</a>
+									<a>滑雪</a>
 									<img alt="ski" src="images/ski.jpg"></img>
 								</div>
 								<div class="splitpage-3">
-									<a href="#">试驾</a>
+									<a>试驾</a>
 									<img alt="driver" src="images/driver.jpg"></img>
 								</div>
 								<div class="splitpage-4">
-									<a href="#">蜜月</a>
+									<a>蜜月</a>
 									<img alt="honeymoon" src="images/honeymoon.jpg"></img>
 								</div>
 							</div>
@@ -637,7 +679,7 @@
 					<div class="container">
 						<div class="row">
 							<div class="col-md-6">
-								<p>Copyright © 2014 by <a target="_blank" href="http://www.icedeer.com">Li, Yuan && Teng, Huan</a>. All Rights Reserved</p>
+								<p>Copyright © 2014 by <a target="_blank" href="http://www.icedeer.net">icedeer.net</a>. All Rights Reserved</p>
 							</div>
 							<div class="col-md-6">
 								<nav class="navbar navbar-default" role="navigation">
@@ -650,12 +692,12 @@
 											<span class="icon-bar"></span>
 										</button>
 									</div>   
-									<div class="collapse navbar-collapse" id="navbar-collapse-2">
+									<div class="collapse navbar-collapse scrollspy smooth-scroll" id="navbar-collapse-2">
 										<ul class="nav navbar-nav">
-											<li><a href="index.html">首页</a></li>
-											<li><a href="page-about.html">经典路线</a></li>
-											<li><a href="blog-right-sidebar.html">北极以南</a></li>
-											<li><a href="portfolio-3col.html">主题旅游</a></li>
+											<li><a href="#header-top">回到顶部</a></li>
+											<li><a href="#classic_path">经典路线</a></li>
+											<li><a href="#south_nodepol">北极以南</a></li>
+											<li><a href="#thema_travel">主题旅游</a></li>
 										</ul>
 									</div>
 								</nav>
