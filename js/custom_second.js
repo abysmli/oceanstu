@@ -29,6 +29,11 @@ $(document).ready(function() {
         obj.click(function() {
             changeTo(index, obj, true);
         });
+        obj.hover(function(){
+            $(this).transition({ scale: [1.5, 1.5], duration: 200 });
+        }, function(){
+            $(this).transition({ scale: [1, 1], duration: 200 });
+        });
     });
 
     $('a[data-toggle="tab"]').on('shown.bs.tab', function (e) {
