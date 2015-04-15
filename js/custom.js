@@ -10,6 +10,17 @@
 
 $(document).ready(function(){
 
+	var _splitpage_width_sum = $(".splitpage-container").width();
+	$(".splitpage-container").height(_splitpage_width_sum*700/1140 + "px");
+	$(".splitpage-1").width(_splitpage_width_sum + "px");
+	$(".splitpage-1").height(_splitpage_width_sum*700/1140 + "px");
+	$(".splitpage-2").width(_splitpage_width_sum + "px");
+	$(".splitpage-2").height(_splitpage_width_sum*700/1140 + "px");
+	$(".splitpage-3").width(_splitpage_width_sum + "px");
+	$(".splitpage-3").height(_splitpage_width_sum*700/1140 + "px");
+	$(".splitpage-4").width(_splitpage_width_sum + "px");
+	$(".splitpage-4").height(_splitpage_width_sum*700/1140 + "px");
+
 	var _splitpage_width = $(".splitpage-container").width()/4;
 	var _splitpage_2_left = _splitpage_width;
 	var _splitpage_3_left = _splitpage_width*2;
@@ -24,6 +35,17 @@ $(document).ready(function(){
 	$(".splitpage-4 img").css({left: _splitpage_offset + "px"});
 
 	$(window).resize(function(){
+		_splitpage_width_sum = $(".splitpage-container").width();
+		$(".splitpage-container").height(_splitpage_width_sum*700/1140 + "px");
+		$(".splitpage-1").width(_splitpage_width_sum + "px");
+		$(".splitpage-1").height(_splitpage_width_sum*700/1140 + "px");
+		$(".splitpage-2").width(_splitpage_width_sum + "px");
+		$(".splitpage-2").height(_splitpage_width_sum*700/1140 + "px");
+		$(".splitpage-3").width(_splitpage_width_sum + "px");
+		$(".splitpage-3").height(_splitpage_width_sum*700/1140 + "px");
+		$(".splitpage-4").width(_splitpage_width_sum + "px");
+		$(".splitpage-4").height(_splitpage_width_sum*700/1140 + "px");
+
 		_splitpage_width = $(".splitpage-container").width()/4;
 		_splitpage_2_left = _splitpage_width;
 		_splitpage_3_left = _splitpage_width*2;
@@ -37,6 +59,8 @@ $(document).ready(function(){
 		$(".splitpage-3 img").css({left: _splitpage_offset + "px"});
 		$(".splitpage-4 img").css({left: _splitpage_offset + "px"});
 	});
+
+	console.log("width: "+$(".splitpage-container").width()+" | height: "+$(".splitpage-container").height());
 
 	$(".splitpage-1").hover(
 		function(){

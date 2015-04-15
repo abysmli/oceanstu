@@ -36,12 +36,13 @@ html, body {
 	z-index: 100;
 	left: 0px;
 	height: 700px;
-	width: 1244px;
+	width: 1140px;
 }
 
 .splitpage-1 a{
 	color: white;
-	font-size: 1.5em;
+	font-size: 1em;
+	text-decoration: none;
 }
 
 .splitpage-2 {
@@ -51,7 +52,7 @@ html, body {
 	z-index: 200;
 	left: 200px;
 	height: 700px;
-	width: 1120px;
+	width: 1140px;
 	-webkit-backface-visibility: hidden;
 	-ms-transform: skew(-10deg,0deg); /* IE 9 */
     -webkit-transform: skew(-10deg,0deg); /* Chrome, Safari, Opera */
@@ -66,7 +67,8 @@ html, body {
 .splitpage-2 a{
 	color: white;
 	-webkit-transform: skew(10deg, 0);
-	font-size: 1.5em;
+	font-size: 1em;
+	text-decoration: none;
 }
 
 .splitpage-3 {
@@ -76,7 +78,7 @@ html, body {
 	z-index: 300;
 	left: 400px;
 	height: 700px;
-	width: 1120px;
+	width: 1140px;
 	-webkit-backface-visibility: hidden;
 	-ms-transform: skew(-10deg,0deg); /* IE 9 */
     -webkit-transform: skew(-10deg,0deg); /* Chrome, Safari, Opera */
@@ -91,7 +93,8 @@ html, body {
 .splitpage-3 a{
 	color: white;
 	-webkit-transform: skew(10deg, 0);
-	font-size: 1.5em;
+	font-size: 1em;
+	text-decoration: none;
 }
 
 .splitpage-4 {
@@ -101,7 +104,7 @@ html, body {
 	z-index: 400;
 	left: 600px;
 	height: 700px;
-	width: 1244px;
+	width: 1140px;
 	-webkit-backface-visibility: hidden;
 	-ms-transform: skew(-10deg,0deg); /* IE 9 */
     -webkit-transform: skew(-10deg,0deg); /* Chrome, Safari, Opera */
@@ -116,7 +119,8 @@ html, body {
 .splitpage-4 a{
 	color: white;
 	-webkit-transform: skew(10deg, 0);
-	font-size: 1.5em;
+	font-size: 1em;
+	text-decoration: none;
 }
 
 .second-page-body {
