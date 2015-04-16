@@ -34,6 +34,8 @@ $(document).ready(function(){
 	$(".splitpage-3 img").css({left: _splitpage_offset + "px"});
 	$(".splitpage-4 img").css({left: _splitpage_offset + "px"});
 
+	$("#map_canvas").height($("#map_canvas").width()*3/5 + "px");
+
 	$(window).resize(function(){
 		_splitpage_width_sum = $(".splitpage-container").width();
 		$(".splitpage-container").height(_splitpage_width_sum*700/1140 + "px");
@@ -58,9 +60,9 @@ $(document).ready(function(){
 		$(".splitpage-2 img").css({left: _splitpage_offset + "px"});
 		$(".splitpage-3 img").css({left: _splitpage_offset + "px"});
 		$(".splitpage-4 img").css({left: _splitpage_offset + "px"});
-	});
 
-	console.log("width: "+$(".splitpage-container").width()+" | height: "+$(".splitpage-container").height());
+		$("#map_canvas").height($("#map_canvas").width()*3/5 + "px");
+	});
 
 	$(".splitpage-1").hover(
 		function(){
@@ -101,6 +103,20 @@ $(document).ready(function(){
 			$(".splitpage-2").finish().transition({left: _splitpage_2_left + "px"});
 			$(".splitpage-3").finish().transition({left: _splitpage_3_left + "px"});
 			$(".splitpage-4").finish().transition({left: _splitpage_4_left + "px"});
+	});
+
+	var map = new GMaps({
+		el: '#map_canvas',
+		lat: 48.744351, 
+		lng: 9.096834,
+	});
+	map.addMarker({
+		lat: 48.744351, 
+		lng: 9.096834,
+		title: '欧深思途',
+		infoWindow: {
+          content: '<p>我们在这</p>'
+        }
 	});
 
 });
