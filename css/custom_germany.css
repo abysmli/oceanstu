@@ -1,0 +1,82 @@
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+.second-page-body {
+	background-color: #474747;
+}
+
+div.deutschland-map-container div a img{
+	width:1em;
+}
+
+.stuttgart {
+	display: inline-block;
+	position: absolute;
+	left: 36%;
+	top: 79%;
+}
+
+.berlin {
+	display: inline-block;
+	position: absolute;
+	left: 73%;
+	top: 33%;
+}
+
+.hamburg {
+	display: inline-block;
+	position: absolute;
+	left: 43%;
+	top: 22%;
+}
+
+.frankfurt {
+	display: inline-block;
+	position: absolute;
+	left: 31%;
+	top: 63%;
+}
+
+.koeln {
+	display: inline-block;
+	position: absolute;
+	left: 15%;
+	top: 53%;
+}
+
+.muenchen {
+	display: inline-block;
+	position: absolute;
+	left: 60%;
+	top: 86%;
+}
+
+.heidelberg {
+	display: inline-block;
+	position: absolute;
+	left: 31%;
+	top: 72%;
+}
+
+.dresden {
+	display: inline-block;
+	position: absolute;
+	left: 77%;
+	top: 50%;
+}
+
+.hanover {
+	display: inline-block;
+	position: absolute;
+	left: 41%;
+	top: 36%;
+}
+
+.duesseldorf {
+	display: inline-block;
+	position: absolute;
+	left: 14%;
+	top: 49%;
+}

@@ -1,0 +1,72 @@
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+.second-page-body {
+	background-color: #474747;
+}
+
+div.italy-map-container div a img{
+	width:1em;
+}
+
+div.france-map-container div a img{
+	width:1em;
+}
+
+.rome {
+	display: inline-block;
+	position: absolute;
+	left: 49%;
+	top: 51%;
+}
+
+.milan {
+	display: inline-block;
+	position: absolute;
+	left: 25%;
+	top: 18%;
+}
+
+.venice {
+	display: inline-block;
+	position: absolute;
+	left: 44%;
+	top: 18%;
+}
+
+.florence {
+	display: inline-block;
+	position: absolute;
+	left: 39%;
+	top: 34%;
+}
+
+.paris {
+	display: inline-block;
+	position: absolute;
+	left: 52%;
+	top: 26%;
+}
+
+.nice {
+	display: inline-block;
+	position: absolute;
+	left: 86%;
+	top: 74%;
+}
+
+.provence {
+	display: inline-block;
+	position: absolute;
+	left: 80%;
+	top: 73%;
+}
+
+.dazur {
+	display: inline-block;
+	position: absolute;
+	left: 79%;
+	top: 80%;
+}
