@@ -104,15 +104,14 @@ $(document).ready(function(){
 			$(".splitpage-3").finish().transition({left: _splitpage_3_left + "px"});
 			$(".splitpage-4").finish().transition({left: _splitpage_4_left + "px"});
 	});
-
 	var map = new GMaps({
 		el: '#map_canvas',
-		lat: 48.744351, 
-		lng: 9.096834,
+		lat: 48.695443,
+		lng: 9.161513,
 	});
 	map.addMarker({
-		lat: 48.744351, 
-		lng: 9.096834,
+		lat: 48.695443,
+		lng: 9.161513,
 		title: '欧深思途',
 		infoWindow: {
           content: '<p>我们在这</p>'
